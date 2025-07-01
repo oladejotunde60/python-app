@@ -15,7 +15,8 @@ def index():
 def details():
     return jsonify({
         'time': datetime.datetime.now().strftime("%I:%M:%S%p on %B %d, %Y"),
-        'hostname': socket.gethostname()
+        'hostname': socket.gethostname(),
+        'message': 'This is a simple Flask API for demonstration purposes.'
     })
 
 @app.route('/api/v1/healthz')
