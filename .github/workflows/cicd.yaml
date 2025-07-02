@@ -37,7 +37,7 @@ jobs:
         shell: bash
         run: | 
          sudo curl -ksSL -o argocd-linux-amd64 https://argocd-server.argocd/download/argocd-linux-amd64
-         sudo chmod +x argocd
+         chmod +x argocd
          sudo mv argocd-linux-amd64 /usr/local/bin/argocd
          rm argocd-linux-amd64
          argocd login https://argocd-server.argocd \
